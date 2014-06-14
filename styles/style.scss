@@ -1,5 +1,5 @@
-$red: #FF0000;
-$blue: #00FF00;
+$main: #F0E68C;
+$bgColor: #E6E6FA;
 
 .clearfix:after {
      content: " ";
@@ -21,8 +21,8 @@ $blue: #00FF00;
 
 body {
 	font: Helvetica;
-	color: $red;
-	background-color: $blue;
+	color: $main;
+	background-color: $bgColor;
 	font-size: 28px;
 
 	.wrapper {

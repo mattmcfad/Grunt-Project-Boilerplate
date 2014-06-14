@@ -9,6 +9,14 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+
+		coffee: {
+			compile: {
+				files: {
+					'scripts/main.js': 'scripts/*.coffee'
+				}
+			}
+		},
 		jade: {
 			html: {
 				files: {
@@ -52,10 +60,18 @@ module.exports = function(grunt) {
 				options: {
 					livereload: true
 				}
+			},
+			coffee: {
+				files: ['**/*.coffee'],
+				tasks: ['coffee'],
+				options: {
+					livereload: true
+				}
 			}
 		}
 	});
 
+	grunt.loadNpmTasks('grunt-contrib-coffee');
 	grunt.loadNpmTasks('grunt-contrib-jade');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-autoprefixer');
@@ -63,6 +79,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	//default task grunt will run...
-	grunt.registerTask('default', ['jade','connect','sass','autoprefixer','watch']);
+	grunt.registerTask('default', ['coffee','jade','connect','sass','autoprefixer','watch']);
 
 };

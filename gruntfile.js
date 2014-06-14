@@ -9,6 +9,16 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+		jade: {
+			html: {
+				files: {
+					'index.html' : ['*.jade']
+				},
+				options: {
+					pretty: true,
+				}
+			}
+		},
 		sass: { // Task                              
 			dist: { // Target  
 				options: { // Target options
@@ -36,15 +46,23 @@ module.exports = function(grunt) {
 			      livereload: true
 			    }
 			},
+			jade: {
+				files: ['*.jade'],
+				tasks: ['jade'],
+				options: {
+					livereload: true
+				}
+			}
 		}
 	});
 
+	grunt.loadNpmTasks('grunt-contrib-jade');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	//default task grunt will run...
-	grunt.registerTask('default', ['connect','sass','autoprefixer','watch']);
+	grunt.registerTask('default', ['jade','connect','sass','autoprefixer','watch']);
 
 };

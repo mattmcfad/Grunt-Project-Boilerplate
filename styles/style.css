@@ -39,5 +39,6 @@ body .wrapper h1 {
 }
 body .wrapper p {
   color: maroon;
+  color: white;
   font-size: 32px;
 }

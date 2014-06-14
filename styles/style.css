@@ -1,6 +1,39 @@
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font: Helvetica;
   color: red;
   background-color: lime;
   font-size: 28px;
+}
+body .wrapper {
+  background-color: salmon;
+  margin: 0 auto;
+  padding: 25px;
+  width: 600px;
+  border-radius: 25px;
+  -webkit-box-shadow: 3px 3px 3px black;
+          box-shadow: 3px 3px 3px black;
+}
+body .wrapper h1 {
+  width: 50%;
+  margin: 0 auto;
+  color: deepskyblue;
 }

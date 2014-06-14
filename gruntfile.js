@@ -11,20 +11,32 @@ module.exports = function(grunt) {
 	      }
 	    }
 	  },
+	  autoprefixer: {
+	  	options: {
+	  		cascade: true
+	  	},
+	  	single_file: {
+	  		src: 'styles/style.css',
+	  		dest: 'styles/style.css'
+	  	},
+	  },
 	  watch: {
-		  css: {
+		  css: {//task
 		    files: '**/*.scss', //where to watch
-		    tasks: ['sass'],
+		    tasks: ['sass','autoprefixer'], 
 		    options: {
 		      livereload: true,
 		    },
 		  },
+
 		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
+	//default task grunt will run...
 	grunt.registerTask('default', ['watch']);
 
 };

@@ -37,3 +37,7 @@ body .wrapper h1 {
   margin: 0 auto;
   color: deepskyblue;
 }
+body .wrapper p {
+  color: maroon;
+  font-size: 32px;
+}

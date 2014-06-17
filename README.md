@@ -19,6 +19,12 @@ npm install grunt-contrib-connect --save-dev
 npm install grunt-contrib-watch --save-dev
 ```
 
+
+###[JsHint](https://github.com/gruntjs/grunt-contrib-jshint)
+```shell
+npm install grunt-contrib-jshint --save-dev
+```
+
 ###[CoffeeScript](https://github.com/gruntjs/grunt-contrib-coffee)
 ```shell
 sudo npm install -g coffee-script

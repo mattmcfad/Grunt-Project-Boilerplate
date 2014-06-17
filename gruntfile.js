@@ -10,6 +10,10 @@ module.exports = function(grunt) {
 			}
 		},
 
+		jshint: {
+			all: ['scripts/*.js']
+		},
+		//compile CoffeeScript
 		coffee: {
 			compile: {
 				files: {
@@ -17,6 +21,7 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+		//compile Jade
 		jade: {
 			html: {
 				files: {
@@ -27,6 +32,7 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+		//compile Sass
 		sass: { // Task                              
 			dist: { // Target  
 				options: { // Target options
@@ -37,6 +43,7 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+		//autoprefix CSS
 		autoprefixer: {
 			options: {
 				cascade: true
@@ -46,6 +53,7 @@ module.exports = function(grunt) {
 				dest: 'styles/style.css'
 			}
 		},
+		//watch file changes and recompile if necessary
 		watch: {
 			css: {//task
 			    files: '**/*.scss', //where to watch
@@ -61,9 +69,9 @@ module.exports = function(grunt) {
 					livereload: true
 				}
 			},
-			coffee: {
+			javascript: {
 				files: ['**/*.coffee'],
-				tasks: ['coffee'],
+				tasks: ['coffee','jshint'],
 				options: {
 					livereload: true
 				}
@@ -71,6 +79,9 @@ module.exports = function(grunt) {
 		}
 	});
 
+//uglify, concat, minify needed.
+	
+	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-coffee');
 	grunt.loadNpmTasks('grunt-contrib-jade');
 	grunt.loadNpmTasks('grunt-contrib-sass');
@@ -79,6 +90,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	//default task grunt will run...
-	grunt.registerTask('default', ['coffee','jade','connect','sass','autoprefixer','watch']);
+	grunt.registerTask('default', ['coffee','jshint','jade','connect','sass','autoprefixer','watch']);
 
 };

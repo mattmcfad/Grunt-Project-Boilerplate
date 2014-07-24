@@ -16,13 +16,13 @@ This is the starting point that I use when I build a new project.
 npm install
 ```
 2. Update package.json
-* Update your Name, Description, Repository, Homepage etc.
+	* Update your Name, Description, Repository, Homepage etc.
 3. Familiarize yourself with the file structure
-* Dev
-	* Handles all raw files you are developing including Jade, Stylus and multiple JavaScript files
-* Dist
-	* Contains files that should be placed on a webserver.
-	* All files in this folder have been compiled and concatenated.
+	* Dev
+		* Handles all raw files you are developing including Jade, Stylus and multiple JavaScript files
+	* Dist
+		* Contains files that should be placed on a webserver.
+		* All files in this folder have been compiled and concatenated.
 4. Running Grunt
 	* While developing use
 	``` 

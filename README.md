@@ -43,6 +43,12 @@ npm install grunt-contrib-jade --save-dev
 npm install grunt-contrib-sass --save-dev
 ```
 
+###[Stylus](https://github.com/gruntjs/grunt-contrib-stylus)
+```shell
+sudo npm install -g stylus
+npm install grunt-contrib-stylus --save-dev
+```
+
 ###[Auto-Prefixer](https://github.com/nDmitry/grunt-autoprefixer)
 ```shell
 npm install grunt-autoprefixer --save-dev

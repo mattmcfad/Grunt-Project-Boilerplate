@@ -10,6 +10,7 @@ This is the starting point that I use when I build a new project.
 
 ## Getting Started
 1. Install grunt dependencies
+	
 	```
 	npm install
 	```

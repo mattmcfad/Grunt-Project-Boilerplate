@@ -3,10 +3,17 @@
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
+## [For a large project](https://github.com/mmcfadyen91/Grunt-Project-Boilerplate/tree/master/Big%20Project)
 
+## [For a small project](https://github.com/mmcfadyen91/Grunt-Project-Boilerplate/tree/master/Small%20Project)
+
+
+## To use live reload with your project
 
 ###[Auto Reload Chrome Extension](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en)
 
+
+## To add grunt tasks to your package.json file:
 
 ###[Connect](https://github.com/gruntjs/grunt-contrib-connect)
 ```shell

@@ -20,12 +20,15 @@
 npm install grunt-contrib-connect --save-dev
 ```
 
-
 ###[Watch](https://github.com/gruntjs/grunt-contrib-watch)
 ```shell
 npm install grunt-contrib-watch --save-dev
 ```
 
+###[Concat](https://github.com/gruntjs/grunt-contrib-concat)
+```shell
+npm install grunt-contrib-concat --save-dev
+```
 
 ###[JsHint](https://github.com/gruntjs/grunt-contrib-jshint)
 ```shell
@@ -38,12 +41,16 @@ sudo npm install -g coffee-script
 npm install grunt-contrib-coffee --save-dev
 ```
 
+##[CoffeeLint](https://github.com/vojtajina/grunt-coffeelint)
+```shell
+npm install grunt-coffeelint
+```
+
 ###[Jade](https://github.com/gruntjs/grunt-contrib-jade)
 ```shell
 sudo npm install -g jade
 npm install grunt-contrib-jade --save-dev
 ```
-
 
 ###[Sass](https://github.com/gruntjs/grunt-contrib-sass)
 ```shell
@@ -60,7 +67,3 @@ npm install grunt-contrib-stylus --save-dev
 ```shell
 npm install grunt-autoprefixer --save-dev
 ```
-
-
-
-

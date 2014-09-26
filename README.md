@@ -41,7 +41,7 @@ sudo npm install -g coffee-script
 npm install grunt-contrib-coffee --save-dev
 ```
 
-##[CoffeeLint](https://github.com/vojtajina/grunt-coffeelint)
+###[CoffeeLint](https://github.com/vojtajina/grunt-coffeelint)
 ```shell
 npm install grunt-coffeelint
 ```
